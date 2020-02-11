@@ -1,0 +1,17 @@
+.header__nav-list {
+  list-style: none;
+  position: fixed;
+  left: 90%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 10000;
+}
+.header__nav-href::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}

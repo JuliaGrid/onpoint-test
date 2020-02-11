@@ -1,0 +1,94 @@
+.sec1 {
+  z-index: 3;
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.sec1__back {
+  transform: translateZ(0);
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/backSection1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sec1__inscriptions {
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  color: #0d319c;
+  font-size: 40px;
+}
+.sec1__title {
+  font-size: 100px;
+  width: 1500px;
+  font-weight: normal;
+  margin-left: 3%;
+}
+.sec1__aim {
+  margin-left: 60%;
+  margin-top: -20px;
+  font-size: 40px;
+}
+.sec1__aim::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: -110px;
+  margin-top: -30px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.sec1__hypoglycemia {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.sec1__hypoglycemia::before {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  margin-left: 100px;
+  margin-top: 60px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.sec1__risk {
+  margin-left: 77.6%;
+  margin-top: 8%;
+}
+.sec1__risk::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: 100px;
+  margin-top: 60px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.sec1__complication {
+  margin-left: 36%;
+  margin-top: -3%;
+}
+.sec1__complication::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 200px;
+  margin-top: 60px;
+  border-radius: 50%;
+  background-color: orange;
+}
