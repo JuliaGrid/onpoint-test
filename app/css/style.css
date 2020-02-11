@@ -229,8 +229,8 @@
 .year2016__wrapper-left p:after {
   content: '';
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 122px;
+  height: 122px;
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
@@ -249,9 +249,6 @@
   text-align: left;
   width: 560px;
 }
-.year2016__wrapper-right p {
-  margin-left: 30px;
-}
 .year2016__wrapper-right p:before {
   content: '';
   position: absolute;
@@ -260,7 +257,7 @@
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
-  margin-left: -108px;
+  margin-left: -135px;
   z-index: 1;
 }
 .year2016__line {
@@ -296,14 +293,44 @@
 .year2016__part4 {
   display: flex;
 }
+.year2016__part4 p {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.year2016__part4 img {
+  margin-top: 16px;
+}
 .year2016__part5 {
   display: flex;
+}
+.year2016__part5 p {
+  margin-left: 13px;
+  margin-top: 60px;
+}
+.year2016__part5 img {
+  margin-top: 25px;
 }
 .year2016__part6 {
   display: flex;
 }
+.year2016__part6 p {
+  margin-left: 22px;
+  margin-top: 60px;
+}
+.year2016__part6 img {
+  margin-top: 90px;
+}
 .year2016__part7 {
   display: flex;
+}
+.year2016__part7 p {
+  margin-left: 30px;
+}
+.year2016__part7 img {
+  margin-top: 16px;
+}
+.year2016__part7 p:before {
+  margin-left: -140px;
 }
 .year2016__part8 {
   display: flex;
@@ -322,7 +349,7 @@
   margin-top: -182px;
 }
 .year2016__part9 img {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 .year2016__part10 {
   display: flex;
@@ -333,7 +360,7 @@
   margin-top: -110px;
 }
 .year2016__part10 img {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .year2016__part11 {
   display: flex;
