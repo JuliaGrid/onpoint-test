@@ -234,12 +234,12 @@
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
-  margin-left: 12px;
+  margin-left: 22px;
   margin-top: -20px;
   z-index: 1;
 }
 .year2016__wrapper-left p {
-  margin-right: 30px;
+  margin-right: 36px;
 }
 .year2016__wrapper-center {
   text-align: center;
@@ -252,12 +252,12 @@
 .year2016__wrapper-right p:before {
   content: '';
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 122px;
+  height: 122px;
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
-  margin-left: -135px;
+  margin-left: -140px;
   z-index: 1;
 }
 .year2016__line {
@@ -294,43 +294,44 @@
   display: flex;
 }
 .year2016__part4 p {
-  margin-left: 30px;
+  margin-left: 31px;
   margin-top: 60px;
 }
 .year2016__part4 img {
-  margin-top: 16px;
+  margin-top: 76px;
+  margin-left: 8px;
 }
 .year2016__part5 {
   display: flex;
 }
 .year2016__part5 p {
-  margin-left: 13px;
+  margin-left: 23px;
   margin-top: 60px;
 }
 .year2016__part5 img {
-  margin-top: 25px;
+  margin-top: 86px;
 }
 .year2016__part6 {
   display: flex;
 }
 .year2016__part6 p {
-  margin-left: 22px;
+  margin-left: 32px;
   margin-top: 60px;
 }
 .year2016__part6 img {
-  margin-top: 90px;
+  margin-top: 86px;
 }
 .year2016__part7 {
   display: flex;
 }
 .year2016__part7 p {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .year2016__part7 img {
   margin-top: 16px;
 }
 .year2016__part7 p:before {
-  margin-left: -140px;
+  margin-left: -150px;
 }
 .year2016__part8 {
   display: flex;
@@ -346,7 +347,7 @@
   margin-top: 35px;
 }
 .year2016__part9 p:after {
-  margin-top: -182px;
+  margin-top: -174px;
 }
 .year2016__part9 img {
   margin-top: 28px;
@@ -357,7 +358,7 @@
   margin-top: 140px;
 }
 .year2016__part10 p:after {
-  margin-top: -110px;
+  margin-top: -100px;
 }
 .year2016__part10 img {
   margin-top: 30px;
