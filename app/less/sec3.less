@@ -36,6 +36,12 @@
 
   .sec3__title {
       color: white;
+      font-size: 60px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-weight: normal;
+      text-align: left;
+      margin-left: 8%;
   }
 
   .sec3__slider-list {
@@ -43,6 +49,7 @@
     font-size: 40px;
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
   }
 
   .sec3__slider-item {
@@ -126,13 +133,30 @@
     p {
         display: flex;
         justify-content: space-between;
-        width: 275px;
+        width: 268px;
         margin: auto;
+        font-size: 50px;
+    }
+    p:after {
+        content: '';
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.1;
+        margin-left: 46px;
+        margin-top: 90px;
+        z-index: 1;
+    }
+    .year2016__organ {
+        margin-top: 10px;
     }
 }
 
 .year2016__b {
     font-size: 130px;
+    font-weight: bold;
 }
 
 .year2016__part2 {
@@ -196,13 +220,30 @@
 
 .year2016__part8 {
     display: flex;
+    margin-top: 153px;
     p:after {
         margin-top: -134px;
     }
     img {
         margin-top: 10px;
     }
-    
+}
+
+.year2016__part8:after {
+    content: '';
+    background-image: url('../img/arrow1.svg');
+    width: 220px;
+    height: 35px;
+    position: absolute;
+}
+
+.year2016__part8:before {
+    content: '';
+    background-image: url('../img/arrow1.svg');
+    width: 220px;
+    height: 35px;
+    transform: rotate(180deg);
+    position: absolute;
 }
 
 .year2016__part9 {
