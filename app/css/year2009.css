@@ -2,28 +2,71 @@
   display: flex;
   flex-direction: column;
 }
-.year2009__name {
-  display: flex;
-  justify-content: space-between;
+.year2009__name::after {
+  content: '';
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  z-index: 1;
+}
+.year2009__name::before {
+  content: '';
+  position: absolute;
+  width: 72px;
+  height: 11px;
+  background-image: url('../img/arrowyear2009.svg');
 }
 .year2009__part1 {
-  width: 160px;
+  width: 168px;
   position: absolute;
   left: 980px;
-  top: 270px;
+  top: 120px;
 }
-.year2009__part1 .year2009__name {
-  flex-direction: column;
+.year2009__part1 .year2009__organ {
+  margin-top: -14px;
+}
+.year2009__part1 .year2009__name::after {
+  margin-left: -60px;
+  margin-top: 14px;
+}
+.year2009__part1 .year2009__name::before {
+  margin-top: 255px;
+  margin-left: 13px;
+  height: 68px;
+  width: 11px;
+  background-image: url('../img/arrow20092.svg');
+}
+.year2009__b {
+  font-size: 130px;
+  margin-top: -6px;
 }
 .year2009__part2 {
   width: 380px;
   position: absolute;
   left: 385px;
-  top: 187px;
+  top: 270px;
+}
+.year2009__part2 .year2009__name {
+  display: flex;
+  justify-content: space-between;
+}
+.year2009__part2 .year2009__name::after {
+  margin-left: 300px;
+  margin-top: -16px;
+}
+.year2009__part2 .year2009__name::before {
+  margin-top: 106px;
+  margin-left: 356px;
+  height: 68px;
+  width: 11px;
+  background-image: url('../img/arrow20092.svg');
 }
 .year2009__part2 .year2009__organ {
   text-align: right;
-  width: 260px;
+  width: 276px;
 }
 .year2009__part3 {
   width: 346px;
@@ -35,27 +78,142 @@
   text-align: left;
   width: 168px;
 }
+.year2009__part3 .year2009__name {
+  display: flex;
+  justify-content: space-between;
+}
+.year2009__part3 .year2009__name::after {
+  margin-left: 24px;
+  margin-top: -16px;
+}
+.year2009__part3 .year2009__name::before {
+  margin-top: 105px;
+  margin-left: 81px;
+  height: 68px;
+  width: 11px;
+  background-image: url('../img/arrow20092.svg');
+}
 .year2009__part4 {
-  width: 320px;
+  width: 304px;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 560px;
+  right: 234px;
+}
+.year2009__part4 .year2009__name {
+  width: 170px;
+  text-align: left;
+}
+.year2009__part4 .year2009__name::after {
+  margin-left: -148px;
+  margin-top: -204px;
+}
+.year2009__part4 .year2009__name::before {
+  margin-top: 38px;
+  margin-left: -227px;
+  height: 11px;
+  width: 79px;
+  background-image: url('../img/arrow20094.svg');
+}
+.year2009__part4 .year2009__organ {
+  margin-top: 5px;
 }
 .year2009__part5 {
-  width: 142px;
+  width: 144px;
   position: absolute;
+  top: 816px;
+  right: 630px;
+}
+.year2009__part5 .year2009__name {
+  margin-top: 13px;
+}
+.year2009__part5 .year2009__name::after {
+  margin-left: -60px;
+  margin-top: -254px;
+}
+.year2009__part5 .year2009__name::before {
+  margin-top: -184px;
+  margin-left: 15px;
+  height: 65px;
+  width: 11px;
+  background-image: url('../img/arrowyear2019down.svg');
 }
 .year2009__part6 {
-  width: 130px;
+  width: 140px;
   position: absolute;
+  top: 810px;
+  left: 988px;
+}
+.year2009__part6 .year2009__name::after {
+  margin-left: -60px;
+  margin-top: -250px;
+}
+.year2009__part6 .year2009__name::before {
+  margin-top: -188px;
+  margin-left: 19px;
+  height: 65px;
+  width: 11px;
+  background-image: url('../img/arrowyear2019down.svg');
+}
+.year2009__part6 .year2009__organ {
+  margin-top: -8px;
 }
 .year2009__part7 {
-  width: 160px;
+  width: 174px;
   position: absolute;
+  top: 807px;
+  left: 658px;
+}
+.year2009__part7 .year2009__name {
+  margin-top: 8px;
+}
+.year2009__part7 .year2009__name::after {
+  margin-left: -60px;
+  margin-top: -300px;
+}
+.year2009__part7 .year2009__name::before {
+  margin-top: -183px;
+  margin-left: 15px;
+  height: 65px;
+  width: 11px;
+  background-image: url('../img/arrowyear2019down.svg');
 }
 .year2009__part8 {
-  width: 242px;
+  width: 268px;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 552px;
+  left: 300px;
+}
+.year2009__part8 .year2009__name {
+  text-align: right;
+  width: 145px;
+}
+.year2009__part8 .year2009__name::after {
+  margin-left: 30px;
+  margin-top: -144px;
+}
+.year2009__part8 .year2009__name::before {
+  margin-top: 45px;
+  margin-left: 194px;
 }
 .year2009__hyperglycemia {
   width: 770px;
   position: absolute;
+  font-size: 50px;
+  border: 2px solid white;
+  padding-top: 105px;
+  padding-bottom: 54px;
+  top: 444px;
+  left: 665px;
+}
+.year2009__hyperglycemia .year2009__name::after {
+  width: 0;
+  height: 0;
+}
+.year2009__hyperglycemia .year2009__name::before {
+  width: 0;
+  height: 0;
 }
