@@ -169,7 +169,7 @@
 .sec3 {
   z-index: 3;
   position: relative;
-  height: 100vh;
+  height: 100%;
   transform-style: preserve-3d;
 }
 .sec3__back {
@@ -198,7 +198,7 @@
 .sec3__title {
   color: white;
   font-size: 60px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0;
   font-weight: normal;
   text-align: left;
@@ -213,7 +213,7 @@
 }
 .sec3__slider-item {
   display: flex;
-  width: 1820px;
+  width: 1800px;
   margin: auto;
   justify-content: space-between;
 }
@@ -229,9 +229,12 @@
 .sec3__slider-item img {
   z-index: 2;
 }
+.year2016 {
+  display: none;
+}
 .year2016__wrapper-left {
   text-align: right;
-  width: 560px;
+  width: 520px;
 }
 .year2016__wrapper-left p:after {
   content: '';
@@ -250,11 +253,13 @@
 }
 .year2016__wrapper-center {
   text-align: center;
-  width: 560px;
+  width: 340px;
+  margin-left: -40px;
 }
 .year2016__wrapper-right {
   text-align: left;
-  width: 560px;
+  width: 474px;
+  margin-top: 170px;
 }
 .year2016__wrapper-right p:before {
   content: '';
@@ -264,15 +269,43 @@
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
-  margin-left: -140px;
+  margin-left: -145px;
   z-index: 1;
 }
 .year2016__line {
   display: flex;
-  width: 660px;
-  margin-left: -50px;
-  margin-top: 170px;
+  width: 706px;
+  margin-left: -160px;
+  margin-top: 160px;
   justify-content: space-between;
+}
+.year2016__group {
+  width: 470px;
+  padding-left: 46px;
+  margin-left: -46px;
+  border-radius: 80px;
+  margin-top: 80px;
+  background: linear-gradient(to bottom, #2b306f, transparent);
+}
+.year2016__group:after {
+  content: '';
+  background-image: url('../img/arrow9.svg');
+  width: 267px;
+  height: 158px;
+  position: absolute;
+  transform: rotate(61deg);
+  margin-left: -325px;
+  margin-top: -708px;
+}
+.year2016__group:before {
+  content: '';
+  background-image: url('../img/arrow9.svg');
+  width: 267px;
+  height: 158px;
+  margin-left: -310px;
+  margin-top: -146px;
+  transform: rotate(241deg);
+  position: absolute;
 }
 .year2016__part1 {
   display: flex;
@@ -293,8 +326,8 @@
   border-radius: 50%;
   background-color: white;
   opacity: 0.1;
-  margin-left: 46px;
-  margin-top: 90px;
+  margin-left: 74px;
+  margin-top: 80px;
   z-index: 1;
 }
 .year2016__part1 .year2016__organ {
@@ -303,47 +336,133 @@
 .year2016__b {
   font-size: 130px;
   font-weight: bold;
+  margin-right: -40px;
+  margin-top: -10px;
 }
 .year2016__part2 {
   display: flex;
   text-align: right;
-  width: 300px;
+  width: 320px;
+}
+.year2016__part2 span {
+  margin-top: -14px;
+}
+.year2016__part2:before {
+  content: '';
+  background-image: url('../img/arrow2.svg');
+  width: 11px;
+  height: 142px;
+  margin-left: 304px;
+  margin-top: -140px;
+  position: absolute;
+}
+.year2016__part2:after {
+  content: '';
+  background-image: url('../img/arrow21.svg');
+  width: 11px;
+  height: 119px;
+  margin-left: 304px;
+  margin-top: 176px;
+  position: absolute;
 }
 .year2016__part3 {
   display: flex;
   text-align: left;
-  width: 300px;
+  width: 320px;
+}
+.year2016__part3 span {
+  margin-top: -10px;
+}
+.year2016__part3:before {
+  content: '';
+  background-image: url('../img/arrow2.svg');
+  width: 11px;
+  height: 142px;
+  margin-left: 10px;
+  margin-top: -140px;
+  position: absolute;
+}
+.year2016__part3:after {
+  content: '';
+  background-image: url('../img/arrow31.svg');
+  width: 11px;
+  height: 63px;
+  margin-left: 10px;
+  margin-top: 230px;
+  position: absolute;
+}
+.year2016__glucacon {
+  font-size: 30px;
+  margin-right: -270px;
+  margin-top: 10px;
+}
+.year2016__hyperglycemia {
+  font-size: 50px;
+  margin-top: 80px;
 }
 .year2016__part4 {
   display: flex;
+  margin-top: 32px;
 }
 .year2016__part4 p {
-  margin-left: 31px;
-  margin-top: 60px;
+  margin-left: 38px;
+}
+.year2016__part4 p:before {
+  margin-top: 15px;
 }
 .year2016__part4 img {
-  margin-top: 76px;
-  margin-left: 8px;
+  margin-top: 33px;
 }
 .year2016__part5 {
   display: flex;
+  margin-top: 34px;
 }
 .year2016__part5 p {
-  margin-left: 23px;
-  margin-top: 60px;
+  margin-left: 28px;
+}
+.year2016__part5 p:before {
+  margin-top: 10px;
 }
 .year2016__part5 img {
-  margin-top: 86px;
+  margin-top: 36px;
+  margin-left: -5px;
+}
+.year2016__insulin-resistance {
+  font-size: 30px;
+  padding-top: 40px;
+  padding-left: 38px;
 }
 .year2016__part6 {
   display: flex;
+  margin-top: 26px;
 }
 .year2016__part6 p {
   margin-left: 32px;
-  margin-top: 60px;
+}
+.year2016__part6 p:before {
+  margin-top: 12px;
 }
 .year2016__part6 img {
-  margin-top: 86px;
+  margin-top: 42px;
+}
+.year2016__part6:before {
+  content: '';
+  background-image: url('../img/arrow11.svg');
+  width: 11px;
+  height: 46px;
+  margin-left: 134px;
+  margin-top: -170px;
+  position: absolute;
+}
+.year2016__part6:after {
+  content: '';
+  background-image: url('../img/arrow11.svg');
+  width: 11px;
+  height: 46px;
+  margin-left: 156px;
+  margin-top: -170px;
+  transform: rotate(180deg);
+  position: absolute;
 }
 .year2016__part7 {
   display: flex;
@@ -352,62 +471,263 @@
   margin-left: 40px;
 }
 .year2016__part7 img {
-  margin-top: 16px;
+  margin-top: 33px;
 }
 .year2016__part7 p:before {
-  margin-left: -150px;
+  margin-left: -148px;
+  margin-top: 10px;
+}
+.year2016__part7 span {
+  margin-top: -10px;
+}
+.year2016__part7:after {
+  content: '';
+  background-image: url('../img/arrow1.svg');
+  width: 226px;
+  height: 36px;
+  position: absolute;
+  transform: rotate(197deg);
+  margin-left: -275px;
+  margin-top: 15px;
+}
+.year2016__part7:before {
+  content: '';
+  background-image: url('../img/arrow1.svg');
+  width: 226px;
+  height: 36px;
+  margin-left: -268px;
+  margin-top: -7px;
+  transform: rotate(17deg);
+  position: absolute;
 }
 .year2016__part8 {
   display: flex;
   margin-top: 153px;
 }
 .year2016__part8 p:after {
-  margin-top: -134px;
+  margin-top: -142px;
 }
 .year2016__part8 img {
-  margin-top: 10px;
+  margin-top: 30px;
+}
+.year2016__part8 span {
+  margin-top: -10px;
 }
 .year2016__part8:after {
   content: '';
   background-image: url('../img/arrow1.svg');
-  width: 220px;
-  height: 35px;
+  width: 226px;
+  height: 36px;
   position: absolute;
+  margin-left: 570px;
+  margin-top: 30px;
 }
 .year2016__part8:before {
   content: '';
   background-image: url('../img/arrow1.svg');
-  width: 220px;
-  height: 35px;
+  width: 226px;
+  height: 36px;
+  margin-left: 570px;
+  margin-top: 16px;
   transform: rotate(180deg);
   position: absolute;
 }
 .year2016__part9 {
   display: flex;
-  margin-top: 35px;
+  margin-top: 14px;
+  width: 560px;
+  margin-left: -32px;
+}
+.year2016__part9 p {
+  margin-right: 32px;
 }
 .year2016__part9 p:after {
-  margin-top: -174px;
+  margin-top: -145px;
 }
 .year2016__part9 img {
-  margin-top: 28px;
+  margin-top: 42px;
+}
+.year2016__part9 span {
+  margin-top: -10px;
+}
+.year2016__part9:after {
+  content: '';
+  background-image: url('../img/arrow9.svg');
+  width: 267px;
+  height: 158px;
+  position: absolute;
+  margin-left: 570px;
+  margin-top: -120px;
+}
+.year2016__part9:before {
+  content: '';
+  background-image: url('../img/arrow9.svg');
+  width: 267px;
+  height: 158px;
+  margin-left: 600px;
+  margin-top: -96px;
+  transform: rotate(180deg);
+  position: absolute;
+}
+.year2016__amelin {
+  font-size: 30px;
+  margin-top: 26px;
+  margin-right: -30px;
+}
+.year2016__amelin:after {
+  content: '';
+  background-image: url('../img/arrowAmelin1.svg');
+  width: 367px;
+  height: 288px;
+  position: absolute;
+  margin-left: -67px;
+  margin-top: -289px;
+}
+.year2016__amelin:before {
+  content: '';
+  background-image: url('../img/arrowAmelin2.svg');
+  width: 11px;
+  height: 46px;
+  margin-left: 64px;
+  margin-top: 56px;
+  position: absolute;
 }
 .year2016__part10 {
   display: flex;
-  padding-left: 250px;
-  margin-top: 140px;
+  padding-left: 226px;
+  margin-top: 56px;
 }
 .year2016__part10 p:after {
   margin-top: -100px;
 }
 .year2016__part10 img {
-  margin-top: 30px;
+  margin-top: 40px;
+}
+.year2016__part10 span {
+  margin-top: -10px;
+}
+.year2016__part10:after {
+  content: '';
+  background-image: url('../img/arrow10.svg');
+  width: 176px;
+  height: 86px;
+  position: absolute;
+  margin-left: 314px;
+  margin-top: -22px;
+}
+.year2016__part10:before {
+  content: '';
+  background-image: url('../img/arrow101.svg');
+  width: 142px;
+  height: 11px;
+  margin-left: 347px;
+  margin-top: 86px;
+  position: absolute;
 }
 .year2016__part11 {
   display: flex;
   text-align: right;
-  width: 260px;
+  width: 320px;
   margin: auto;
+  margin-top: 80px;
+}
+.year2016__part11 img {
+  margin-left: 23px;
+}
+.year2016__part11 span {
+  margin-top: -10px;
+}
+.year2016__part11 p:after {
+  content: '';
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  margin-left: 16px;
+  margin-top: -130px;
+  z-index: 1;
+}
+.year2016__part11:before {
+  content: '';
+  background-image: url('../img/arrow11.svg');
+  width: 11px;
+  height: 46px;
+  margin-left: 156px;
+  margin-top: -66px;
+  position: absolute;
+}
+.year2016__part11:after {
+  content: '';
+  background-image: url('../img/arrow11.svg');
+  width: 11px;
+  height: 46px;
+  margin-left: 203px;
+  margin-top: -66px;
+  transform: rotate(180deg);
+  position: absolute;
+}
+.year2009 {
+  display: flex;
+  flex-direction: column;
+}
+.year2009__name {
+  display: flex;
+  justify-content: space-between;
+}
+.year2009__part1 {
+  width: 160px;
+  position: absolute;
+  left: 980px;
+  top: 270px;
+}
+.year2009__part1 .year2009__name {
+  flex-direction: column;
+}
+.year2009__part2 {
+  width: 380px;
+  position: absolute;
+  left: 385px;
+  top: 187px;
+}
+.year2009__part2 .year2009__organ {
+  text-align: right;
+  width: 260px;
+}
+.year2009__part3 {
+  width: 346px;
+  position: absolute;
+  right: 443px;
+  top: 270px;
+}
+.year2009__part3 .year2009__organ {
+  text-align: left;
+  width: 168px;
+}
+.year2009__part4 {
+  width: 320px;
+  position: absolute;
+}
+.year2009__part5 {
+  width: 142px;
+  position: absolute;
+}
+.year2009__part6 {
+  width: 130px;
+  position: absolute;
+}
+.year2009__part7 {
+  width: 160px;
+  position: absolute;
+}
+.year2009__part8 {
+  width: 242px;
+  position: absolute;
+}
+.year2009__hyperglycemia {
+  width: 770px;
+  position: absolute;
 }
 @font-face {
   font-family: 'GothamPro';
