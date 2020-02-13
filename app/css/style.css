@@ -671,6 +671,29 @@
 .year2009 {
   display: flex;
   flex-direction: column;
+  display: none;
+}
+.year2009__wrapper-up {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  margin: auto;
+  margin-top: 12px;
+  margin-right: 310px;
+}
+.year2009__wrapper-center {
+  display: flex;
+  justify-content: space-between;
+  width: 1510px;
+  margin: auto;
+  margin-right: 110px;
+}
+.year2009__wrapper-down {
+  display: flex;
+  justify-content: space-between;
+  width: 770px;
+  margin: auto;
+  margin-top: 80px;
 }
 .year2009__name::after {
   content: '';
@@ -691,9 +714,7 @@
 }
 .year2009__part1 {
   width: 168px;
-  position: absolute;
-  left: 980px;
-  top: 120px;
+  margin-left: 80px;
 }
 .year2009__part1 .year2009__organ {
   margin-top: -14px;
@@ -715,9 +736,7 @@
 }
 .year2009__part2 {
   width: 380px;
-  position: absolute;
-  left: 385px;
-  top: 270px;
+  margin-top: 150px;
 }
 .year2009__part2 .year2009__name {
   display: flex;
@@ -740,9 +759,7 @@
 }
 .year2009__part3 {
   width: 346px;
-  position: absolute;
-  right: 443px;
-  top: 270px;
+  margin-top: 150px;
 }
 .year2009__part3 .year2009__organ {
   text-align: left;
@@ -765,11 +782,10 @@
 }
 .year2009__part4 {
   width: 304px;
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 560px;
-  right: 234px;
+  margin-right: -10px;
+  margin-top: 114px;
 }
 .year2009__part4 .year2009__name {
   width: 170px;
@@ -791,9 +807,7 @@
 }
 .year2009__part5 {
   width: 144px;
-  position: absolute;
-  top: 816px;
-  right: 630px;
+  margin-top: 8px;
 }
 .year2009__part5 .year2009__name {
   margin-top: 13px;
@@ -811,9 +825,6 @@
 }
 .year2009__part6 {
   width: 140px;
-  position: absolute;
-  top: 810px;
-  left: 988px;
 }
 .year2009__part6 .year2009__name::after {
   margin-left: -60px;
@@ -831,9 +842,6 @@
 }
 .year2009__part7 {
   width: 174px;
-  position: absolute;
-  top: 807px;
-  left: 658px;
 }
 .year2009__part7 .year2009__name {
   margin-top: 8px;
@@ -850,16 +858,14 @@
   background-image: url('../img/arrowyear2019down.svg');
 }
 .year2009__part8 {
-  width: 268px;
-  position: absolute;
+  width: 250px;
   display: flex;
   justify-content: space-between;
-  top: 552px;
-  left: 300px;
+  margin-top: 110px;
 }
 .year2009__part8 .year2009__name {
   text-align: right;
-  width: 145px;
+  width: 125px;
 }
 .year2009__part8 .year2009__name::after {
   margin-left: 30px;
@@ -871,13 +877,11 @@
 }
 .year2009__hyperglycemia {
   width: 770px;
-  position: absolute;
   font-size: 50px;
   border: 2px solid white;
   padding-top: 105px;
   padding-bottom: 54px;
-  top: 444px;
-  left: 665px;
+  margin-left: 6px;
 }
 .year2009__hyperglycemia .year2009__name::after {
   width: 0;
@@ -886,6 +890,131 @@
 .year2009__hyperglycemia .year2009__name::before {
   width: 0;
   height: 0;
+}
+.year1998 {
+  display: flex;
+  flex-direction: column;
+}
+.year1998__wrapper-down {
+  display: flex;
+  width: 1190px;
+  margin: auto;
+  margin-top: 14px;
+  justify-content: space-between;
+}
+.year1998__organ {
+  font-size: 45px;
+}
+.year1998__name::after {
+  content: '';
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  z-index: 1;
+}
+.year1998__name::before {
+  content: '';
+  position: absolute;
+  width: 132px;
+  height: 11px;
+  background-image: url('../img/arrow19982.svg');
+}
+.year1998__part1 {
+  width: 190px;
+  margin: auto;
+  margin-top: 108px;
+  margin-left: 850px;
+}
+.year1998__part1 .year1998__name::after {
+  margin-top: 20px;
+  margin-left: -90px;
+}
+.year1998__part1 .year1998__name::before {
+  margin-left: -56px;
+  margin-top: 404px;
+  transform: rotate(270deg);
+}
+.year1998__b {
+  font-weight: bold;
+  font-size: 132px;
+  margin-top: 8px;
+  margin-left: -16px;
+}
+.year1998__b::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/arrow1998.svg');
+  width: 315px;
+  height: 265px;
+  margin-left: -366px;
+  margin-top: 128px;
+}
+.year1998__b::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/arrow1998.svg');
+  width: 315px;
+  height: 265px;
+  transform: rotate(260deg);
+  margin-left: 54px;
+  margin-top: 129px;
+}
+.year1998__part2 {
+  margin-left: 60px;
+}
+.year1998__part2 .year1998__name {
+  margin-bottom: 74px;
+}
+.year1998__part2 .year1998__name::after {
+  margin-top: 34px;
+  margin-left: -90px;
+}
+.year1998__part2 .year1998__name::before {
+  margin-left: 106px;
+  margin-top: 262px;
+  transform: rotate(180deg);
+}
+.year1998__part2 .year1998__organ {
+  margin-top: -8px;
+}
+.year1998__part2 img {
+  margin-left: -12px;
+}
+.year1998__hyperglycemia {
+  border: 2px solid white;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 490px;
+  margin-top: 176px;
+  margin-right: 18px;
+}
+.year1998__hyperglycemia .year1998__name::after {
+  width: 0;
+  height: 0;
+}
+.year1998__hyperglycemia .year1998__name::before {
+  width: 0;
+  height: 0;
+}
+.year1998__part3 .year1998__name {
+  margin-bottom: 72px;
+}
+.year1998__part3 img {
+  margin-right: -44px;
+}
+.year1998__part3 .year1998__name::after {
+  margin-top: 34px;
+  margin-left: -68px;
+}
+.year1998__part3 .year1998__name::before {
+  margin-left: -202px;
+  margin-top: 264px;
+}
+.year1998__part3 .year1998__organ {
+  margin-top: -8px;
 }
 @font-face {
   font-family: 'GothamPro';

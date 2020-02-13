@@ -1,0 +1,138 @@
+.year1998 {
+    display: flex;
+    flex-direction: column;
+}
+
+.year1998__wrapper-down {
+    display: flex;
+    width: 1190px;
+    margin: auto;
+    margin-top: 14px;
+    justify-content: space-between;
+}
+
+.year1998__organ {
+    font-size: 45px;
+}
+
+.year1998__name::after {
+    content: '';
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.year1998__name::before {
+    content: '';
+    position: absolute;
+    width: 132px;
+    height: 11px;
+    background-image: url('../img/arrow19982.svg');
+}
+
+.year1998__part1 {
+    width: 190px;
+    margin: auto; 
+    margin-top: 108px;
+    margin-left: 850px;
+    .year1998__name::after {
+        margin-top: 20px;
+        margin-left: -90px;
+    }
+    .year1998__name::before {
+        margin-left: -56px;
+        margin-top: 404px;
+        transform: rotate(270deg);
+    }
+}
+
+.year1998__b {
+    font-weight: bold;
+    font-size: 132px;
+    margin-top: 8px;
+    margin-left: -16px;
+}
+
+.year1998__b::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/arrow1998.svg');
+    width: 315px;
+    height: 265px;
+    margin-left: -366px;
+    margin-top: 128px;
+}
+
+.year1998__b::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/arrow1998.svg');
+    width: 315px;
+    height: 265px;
+    transform: rotate(260deg);
+    margin-left: 54px;
+    margin-top: 129px;
+}
+
+.year1998__part2 {
+    margin-left: 60px;
+    .year1998__name {
+        margin-bottom: 74px;
+    }
+    .year1998__name::after {
+        margin-top: 34px;
+        margin-left: -90px;
+    }
+    .year1998__name::before {
+        margin-left: 106px;
+        margin-top: 262px;
+        transform: rotate(180deg);
+    }
+    .year1998__organ {
+        margin-top: -8px;
+    }
+    img {
+        margin-left: -12px;
+    }
+}
+
+.year1998__hyperglycemia {
+    border: 2px solid white;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 490px;
+    margin-top: 176px;
+    margin-right: 18px;
+    .year1998__name::after {
+        width: 0;
+        height: 0;
+    }
+    .year1998__name::before {
+        width: 0;
+        height: 0;
+    }
+}
+
+.year1998__part3 {
+  .year1998__name {
+        margin-bottom: 72px;
+    }
+    img {
+        margin-right: -44px;
+    }
+    .year1998__name::after {
+        margin-top: 34px;
+        margin-left: -68px;
+    }
+    .year1998__name::before {
+        margin-left: -202px;
+        margin-top: 264px;
+    }
+    .year1998__organ {
+        margin-top: -8px;
+    }
+}
