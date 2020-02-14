@@ -1,7 +1,7 @@
 .header__nav-list {
   list-style: none;
   position: fixed;
-  left: 90%;
+  right: 80px;
   top: 50%;
   margin: 0;
   padding: 0;
@@ -10,8 +10,20 @@
 .header__nav-href::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: white;
+}
+.header__nav-item:nth-child(1) > .header__nav-href::after {
+  margin-top: -14px;
+}
+.header__nav-item:nth-child(2) > .header__nav-href::after {
+  margin-top: 28px;
+}
+.header__nav-item:nth-child(3) > .header__nav-href::after {
+  margin-top: 70px;
+}
+.header__nav-href:active > .header__nav-href::after {
+  background-color: orange;
 }

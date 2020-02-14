@@ -2,7 +2,7 @@
     z-index: 3;
     position: relative;
    // min-height: 100vh;
-    height: 100%;
+    height: 2000px;
     transform-style: preserve-3d;
   }
 
@@ -51,6 +51,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato';
+    display: flex;
+    width: 5400px;
+    margin-left: -3600px;
+    justify-content: space-between;
   }
 
   .sec3__slider-item {
@@ -73,7 +77,7 @@
   }
 
   .year2016 {
-      display: none;
+     // display: none;
   }
 
   .year2016__wrapper-left {
@@ -195,6 +199,16 @@
     margin-top: -10px;
 }
 
+.year2016__b::after {
+    content: '';
+    background-image: url('../img/arrow2016long.svg');
+    width: 11px;
+    height: 433px;
+    margin-left: -36px;
+    margin-top: 180px;
+    position: absolute;
+}
+
 .year2016__part2 {
     display: flex;
     text-align: right;
@@ -257,6 +271,16 @@
     font-size: 30px;
     margin-right: -270px;
     margin-top: 10px;
+}
+
+.year2016__glucacon::before {
+    content: '';
+    background-image: url('../img/arrowshort.svg');
+    width: 11px;
+    height: 36px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -42px;
 }
 
 .year2016__hyperglycemia {
@@ -369,7 +393,7 @@
     width: 226px;
     height: 36px;
     margin-left: -268px;
-    margin-top: -7px;
+    margin-top: -6px;
     transform: rotate(17deg);
     position: absolute;
 }
@@ -403,8 +427,8 @@
     background-image: url('../img/arrow1.svg');
     width: 226px;
     height: 36px;
-    margin-left: 570px;
-    margin-top: 16px;
+    margin-left: 568px;
+    margin-top: 14px;
     transform: rotate(180deg);
     position: absolute;
 }
@@ -434,8 +458,8 @@
     width: 267px;
     height: 158px;
     position: absolute;
-    margin-left: 570px;
-    margin-top: -120px;
+    margin-left: 590px;
+    margin-top: -113px;
 }
 
 .year2016__part9:before {
@@ -443,8 +467,8 @@
     background-image: url('../img/arrow9.svg');
     width: 267px;
     height: 158px;
-    margin-left: 600px;
-    margin-top: -96px;
+    margin-left: 598px;
+    margin-top: -98px;
     transform: rotate(180deg);
     position: absolute;
 }

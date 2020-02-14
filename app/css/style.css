@@ -1,7 +1,7 @@
 .header__nav-list {
   list-style: none;
   position: fixed;
-  left: 90%;
+  right: 80px;
   top: 50%;
   margin: 0;
   padding: 0;
@@ -10,10 +10,22 @@
 .header__nav-href::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: white;
+}
+.header__nav-item:nth-child(1) > .header__nav-href::after {
+  margin-top: -14px;
+}
+.header__nav-item:nth-child(2) > .header__nav-href::after {
+  margin-top: 28px;
+}
+.header__nav-item:nth-child(3) > .header__nav-href::after {
+  margin-top: 70px;
+}
+.header__nav-href:active > .header__nav-href::after {
+  background-color: orange;
 }
 .sec1 {
   z-index: 3;
@@ -71,12 +83,24 @@
   margin-left: 20%;
   margin-top: 10%;
 }
-.sec1__hypoglycemia::before {
-  content: '';
+/*.sec1__hypoglycemia::before {
+    content: '';
+    position: absolute;
+       width: 55px;
+       height: 55px;
+       margin-left: 100px;
+       margin-top: 60px;
+       border-radius: 50%;
+       background-color: orange;
+   } */
+.centerwrap {
+  margin-left: 50%;
+}
+.sec1__hypoglycemia-elipse {
   position: absolute;
   width: 55px;
   height: 55px;
-  margin-left: 100px;
+  margin-left: 50%;
   margin-top: 60px;
   border-radius: 50%;
   background-color: orange;
@@ -169,7 +193,7 @@
 .sec3 {
   z-index: 3;
   position: relative;
-  height: 100%;
+  height: 2000px;
   transform-style: preserve-3d;
 }
 .sec3__back {
@@ -210,6 +234,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Lato';
+  display: flex;
+  width: 5400px;
+  margin-left: -3600px;
+  justify-content: space-between;
 }
 .sec3__slider-item {
   display: flex;
@@ -228,9 +256,6 @@
 }
 .sec3__slider-item img {
   z-index: 2;
-}
-.year2016 {
-  display: none;
 }
 .year2016__wrapper-left {
   text-align: right;
@@ -339,6 +364,15 @@
   margin-right: -40px;
   margin-top: -10px;
 }
+.year2016__b::after {
+  content: '';
+  background-image: url('../img/arrow2016long.svg');
+  width: 11px;
+  height: 433px;
+  margin-left: -36px;
+  margin-top: 180px;
+  position: absolute;
+}
 .year2016__part2 {
   display: flex;
   text-align: right;
@@ -395,6 +429,15 @@
   font-size: 30px;
   margin-right: -270px;
   margin-top: 10px;
+}
+.year2016__glucacon::before {
+  content: '';
+  background-image: url('../img/arrowshort.svg');
+  width: 11px;
+  height: 36px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -42px;
 }
 .year2016__hyperglycemia {
   font-size: 50px;
@@ -496,7 +539,7 @@
   width: 226px;
   height: 36px;
   margin-left: -268px;
-  margin-top: -7px;
+  margin-top: -6px;
   transform: rotate(17deg);
   position: absolute;
 }
@@ -527,8 +570,8 @@
   background-image: url('../img/arrow1.svg');
   width: 226px;
   height: 36px;
-  margin-left: 570px;
-  margin-top: 16px;
+  margin-left: 568px;
+  margin-top: 14px;
   transform: rotate(180deg);
   position: absolute;
 }
@@ -556,16 +599,16 @@
   width: 267px;
   height: 158px;
   position: absolute;
-  margin-left: 570px;
-  margin-top: -120px;
+  margin-left: 590px;
+  margin-top: -113px;
 }
 .year2016__part9:before {
   content: '';
   background-image: url('../img/arrow9.svg');
   width: 267px;
   height: 158px;
-  margin-left: 600px;
-  margin-top: -96px;
+  margin-left: 598px;
+  margin-top: -98px;
   transform: rotate(180deg);
   position: absolute;
 }
@@ -671,7 +714,6 @@
 .year2009 {
   display: flex;
   flex-direction: column;
-  display: none;
 }
 .year2009__wrapper-up {
   display: flex;
@@ -1034,9 +1076,15 @@ body {
   overflow-y: hidden;
   font-family: 'GothamPro';
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 .main-page {
   perspective: 300px;
   height: 100vh;
-  overflow-x: hidden;
   overflow-y: auto;
 }
