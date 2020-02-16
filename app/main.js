@@ -2,15 +2,17 @@ let button2016 = document.querySelector('#radioButton2016');
 let button2009 = document.querySelector('#radioButton2009');
 let button1998 = document.querySelector('#radioButton1998');
 let buttons = document.getElementsByName('slide');
+let sec3wrapper = document.querySelector('.sec3__wrapper');
 
 let pathogenesisList = document.querySelector('.sec3__slider-list');
 
 function check() {
     if(button2016.checked) {
-        pathogenesisList.style.marginLeft = '-3600px';
+        pathogenesisList.style.marginLeft = '-3740px';
     }
     if(button2009.checked) {
-        pathogenesisList.style.marginLeft = '-1800px';
+        pathogenesisList.style.marginLeft = '-1940px';
+        sec3wrapper.style.width = '1800px';
     }
     if(button1998.checked) {
         pathogenesisList.style.marginLeft = '0px';

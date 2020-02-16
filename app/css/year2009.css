@@ -16,6 +16,7 @@
   width: 1510px;
   margin: auto;
   margin-right: 110px;
+  margin-top: 50px;
 }
 .year2009__wrapper-down {
   display: flex;
@@ -97,6 +98,9 @@
 .year2009__part3 .year2009__name {
   display: flex;
   justify-content: space-between;
+}
+.year2009__part3 .year2009__number {
+  margin-left: 64px;
 }
 .year2009__part3 .year2009__name::after {
   margin-left: 24px;
