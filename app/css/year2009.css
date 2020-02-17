@@ -21,7 +21,7 @@
 .year2009__wrapper-down {
   display: flex;
   justify-content: space-between;
-  width: 770px;
+  width: 684px;
   margin: auto;
   margin-top: 80px;
 }
@@ -141,6 +141,7 @@
 .year2009__part5 {
   width: 144px;
   margin-top: 8px;
+  margin-right: -94px;
 }
 .year2009__part5 .year2009__name {
   margin-top: 13px;
@@ -158,6 +159,7 @@
 }
 .year2009__part6 {
   width: 140px;
+  margin-top: 4px;
 }
 .year2009__part6 .year2009__name::after {
   margin-left: -60px;

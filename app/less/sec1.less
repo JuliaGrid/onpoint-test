@@ -16,7 +16,8 @@
 
     background-image: url('../img/backSection1.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -250px;
 }
 
 .sec1__inscriptions {
@@ -27,14 +28,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-
     position: absolute;
     width: 100%;
-
-    //font-size: 60px;
-    //width: 900px;
     text-align: left;
-
     color: #0d319c;
     font-size: 40px;
 }
@@ -43,84 +39,298 @@
     font-size: 100px;
     width: 1500px;
     font-weight: normal;
-    margin-left: 3%;
+    margin-left: 140px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    line-height: 112px;
+    letter-spacing: -1px;
 }
 
-.sec1__aim {
-    margin-left: 60%;
-    margin-top: -20px;
-    font-size: 40px;
+.sec1__wrapper-long {
+    display: flex;
+    width: 1500px;
+    justify-content: space-between;
+    margin: auto;
 }
 
-.sec1__aim::before {
- content: '';
- position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-left: -110px;
-    margin-top: -30px;
+.sec1__wrapper-short {
+    display: flex;
+    width: 840px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.sec1__circle {
     border-radius: 50%;
-    background-color: orange;
+    background-color: #f78b1f;
+    opacity: 0.2;
+}
+
+.sec1__circle-animate {
+    content: '';
+    border-radius: 50%;
+    background-color: #f78b1f;
+    opacity: 0.2;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+.sec1__circle-border {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #c33250;
+}
+
+.sec1__circle-border:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #c33250;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+.sec1__name {
+    letter-spacing: -2px;
+    display: block;
 }
 
 .sec1__hypoglycemia {
-    margin-left: 20%;
-    margin-top: 10%;
+    width: 290px;
+    margin-left: 176px;
+    margin-top: 290px;
+    .sec1__circle {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        margin-left: 100px;
+        margin-top: 18px;
+    }
+    .sec1__circle-animate {
+        width: 55px;
+        height: 55px;
+        margin-left: 100px;
+        margin-top: 18px;
+        animation-name: hypoglycemia-circle;
+    }
+    .sec1__circle-border {
+        width: 53px;
+        height: 53px;
+        margin-left: 100px;
+        margin-top: 18px;
+    }
+    .sec1__circle-border:after {
+        width: 53px;
+        height: 53px;
+        margin-left: -2px;
+        margin-top: -2px;
+        animation-name: hypoglycemia-circle-border;
+    }
 }
 
-/*.sec1__hypoglycemia::before {
-    content: '';
-    position: absolute;
-       width: 55px;
-       height: 55px;
-       margin-left: 100px;
-       margin-top: 60px;
-       border-radius: 50%;
-       background-color: orange;
-   } */
+@keyframes hypoglycemia-circle {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 52px;
+        margin-left: 130px;
+    }
+    100% {
+        width: 55px;
+        height: 55px;
+    }
+}
 
-   .centerwrap {
-       margin-left: 50%;
-   }
-
-   .sec1__hypoglycemia-elipse {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    margin-left: 50%;
-    margin-top: 60px;
-    border-radius: 50%;
-    background-color: orange;
-   }
+@keyframes hypoglycemia-circle-border {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+    100% {
+        width: 53px;
+        height: 53px;
+    }
+}
 
 .sec1__risk {
-    margin-left: 77.6%;
-    margin-top: 8%;
+    width: 195px;
+    margin-top: 474px;
+    .sec1__circle {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        margin-left: 66px;
+        margin-top: 16px;
+    }
+    .sec1__circle-animate {
+        width: 33px;
+        height: 33px;
+        margin-left: 66px;
+        margin-top: 16px;
+        animation-name: risk-circle;
+    }
+    .sec1__circle-border {
+        width: 31px;
+        height: 31px;
+        margin-left: 66px;
+        margin-top: 16px;
+    }
+    .sec1__circle-border:after {
+        margin-left: -2px;
+        margin-top: -2px;
+        animation-name: complication-circle-border;
+    }
 }
 
-.sec1__risk::before {
-    content: '';
-    position: absolute;
-       width: 10px;
-       height: 10px;
-       margin-left: 100px;
-       margin-top: 60px;
-       border-radius: 50%;
-       background-color: orange;
-   }
+@keyframes risk-circle {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 34px;
+        margin-left: 84px;
+    }
+    100% {
+        width: 33px;
+        height: 33px;
+    }
+}
 
 .sec1__complication {
-    margin-left: 36%;
-    margin-top: -3%;
+    width: 340px;
+    margin-top: 512px;
+    .sec1__circle {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        margin-left: 218px;
+        margin-top: 18px;
+    }
+    .sec1__circle-animate {
+        width: 33px;
+        height: 33px;
+        margin-left: 218px;
+        margin-top: 18px;
+        animation-name: complication-circle;
+    }
+    .sec1__circle-border {
+        width: 31px;
+        height: 31px;
+        margin-left: 218px;
+        margin-top: 18px;
+    }
+    .sec1__circle-border:after {
+        margin-left: -2px;
+        margin-top: -2px;
+        animation-name: complication-circle-border;
+    }
 }
 
-.sec1__complication::before {
-    content: '';
+@keyframes complication-circle {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 38px;
+        margin-left: 237px;
+    }
+    100% {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@keyframes complication-circle-border {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 14px;
+        margin-left: 14px;
+    }
+    100% {
+        width: 31px;
+        height: 31px;
+    }
+}
+
+.sec1__aim {
+    width: 428px;
+    margin-top: 16px;
+    margin-right: 26px;
+    display: flex;
+    justify-content: space-between;
+    .sec1__circle {
+        width: 107px;
+        height: 107px;
+    }
+    .sec1__circle-animate {
+        width: 107px;
+        height: 107px;
+        animation-name: aim-circle;
+    }
+    .sec1__circle-border {
+        width: 105px;
+        height: 105px;
+    }
+    .sec1__circle-border:after {
+        margin-top: -2px;
+        margin-left: -2px;
+        animation-name: aim-circle-border;
+    }
+    .sec1__name {
+        margin-top: 36px;
+    }
+}
+
+@keyframes aim-circle {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 56px;
+        margin-left: 56px;
+    }
+    100% {
+        width: 107px;
+        height: 107px;
+    }
+}
+
+@keyframes aim-circle-border {
+    from {
+        width: 0px;
+        height: 0px;
+        margin-top: 54px;
+        margin-left: 54px;
+    }
+    100% {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+.sec1__go {
     position: absolute;
-       width: 30px;
-       height: 30px;
-       margin-left: 200px;
-       margin-top: 60px;
-       border-radius: 50%;
-       background-color: orange;
-   }
+    width: 1006px;
+    left: 50%;
+    margin-left: -503px;
+    p {
+        font-size: 30px;
+        color: white;
+        margin: 0;
+        text-align: center;
+    } 
+    p:after {
+        width: 86px;
+        height: 43px;
+        content: '';
+        margin-top: 40px;
+        margin-left: -150px;
+        position: absolute;
+        background-image: url('../img/goarrow.svg');
+    }
+    img {
+        margin-top: -30px;
+    }
+}

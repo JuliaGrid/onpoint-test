@@ -9,17 +9,17 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                      <a class="header__nav-href" href="#sec1">
+                      <a class="header__nav-href" href="#sec1" id="menu1sec">
                         <span class="visually-hidden">Секция 1</span>
                       </a>
                     </li>
                     <li class="header__nav-item">
-                      <a class="header__nav-href" href="#sec2">
+                      <a class="header__nav-href" href="#sec2" id="menu2sec">
                           <span class="visually-hidden">Секция 2</span>
                       </a>
                     </li>
                     <li class="header__nav-item">
-                      <a class="header__nav-href" href="#sec3">
+                      <a class="header__nav-href" href="#sec3" id="menu3sec">
                           <span class="visually-hidden">Секция 3</span>
                       </a>
                     </li>
@@ -29,19 +29,43 @@
         <main class="main-page">
           <section class="sec1" id="sec1">
            <div class="sec1__inscriptions">
+              <div class="sec1__go">
+                  <p>Листайте вниз</p>
+                  <img src="img/goimg.svg" width="1006px" height="162px">
+                </div>
             <h1 class="sec1__title">
               Всегда ли цели терапии СД2
               на поверхности?
             </h1> 
-            <p class="sec1__aim">Цели по HbA1c
-              <span class="sec1__circle"></span>
-            </p>
-            <p class="sec1__hypoglycemia">Гипогликемия</p>
-            <div class="centerwrap">
-              <div class="sec1__hypoglycemia-elipse"></div>
-            </div>
-            <p class="sec1__risk">СС риски</p>
-            <p class="sec1__complication">Осложнения СД</p>
+                <div class="sec1__wrapper-long">
+                    <p class="sec1__hypoglycemia">
+                        <span class="sec1__name">Гипогликемия</span>
+                        <span class="sec1__circle"></span>
+                        <span class="sec1__circle-border"></span>
+                        <span class="sec1__circle-animate"></span>
+                      </p>
+                    <div class="sec1__wrapper-short">
+                        <p class="sec1__complication">
+                          <span class="sec1__name">Осложнения СД</span>
+                          <span class="sec1__circle"></span>
+                          <span class="sec1__circle-border"></span>
+                          <span class="sec1__circle-animate"></span>
+                        </p>
+                        <p class="sec1__aim">
+                            <span class="sec1__circle"></span>
+                            <span class="sec1__circle-border"></span>
+                            <span class="sec1__circle-animate"></span>
+                            <span class="sec1__name">Цель по HbA1c</span>
+                        </p>
+                    </div>
+                    <p class="sec1__risk">
+                      <span class="sec1__name">СС риски</span>
+                      <span class="sec1__circle"></span>
+                      <span class="sec1__circle-border"></span>
+                      <span class="sec1__circle-animate"></span>
+                    </p>
+                </div>
+              
           </div>
             <div class="sec1__back"> 
             </div>
@@ -335,13 +359,15 @@
                     <input type="radio" name="slide" id="radioButton2009">
                     <input type="radio" name="slide" id="radioButton2016" checked>
                 </div>
-                <div class="sec3__scale">
-                    <img class="sec3__scale-button" src="img/Polygon.svg" width="94px" height="118px">
-                    <div class="sec3__scale-years">
-                      <p>1998</p>
-                      <p>2009</p>
-                      <p>2016</p>
+               
+                <div id="slider" class="sec3__slider">
+                    <div class="sec3__thumb">  
                     </div>
+                </div>
+                <div class="sec3__years">
+                  <p>1998</p>
+                  <p>2009</p>
+                  <p>2016</p>
                 </div>
               </div>
                 <div class="sec3__back">

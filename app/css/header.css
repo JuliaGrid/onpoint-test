@@ -7,23 +7,16 @@
   padding: 0;
   z-index: 10000;
 }
-.header__nav-href::after {
-  content: '';
+.header__nav-href {
   position: absolute;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   background-color: white;
 }
-.header__nav-item:nth-child(1) > .header__nav-href::after {
-  margin-top: -14px;
+#menu2sec {
+  margin-top: 40px;
 }
-.header__nav-item:nth-child(2) > .header__nav-href::after {
-  margin-top: 28px;
-}
-.header__nav-item:nth-child(3) > .header__nav-href::after {
-  margin-top: 70px;
-}
-.header__nav-href:active > .header__nav-href::after {
-  background-color: orange;
+#menu3sec {
+  margin-top: 80px;
 }

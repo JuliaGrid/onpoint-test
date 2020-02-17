@@ -27,6 +27,7 @@
   left: 0;
 }
 .sec2__title {
+  position: relative;
   text-align: center;
   font-weight: normal;
   color: white;
@@ -34,6 +35,7 @@
   margin: auto;
   margin-top: 20%;
   width: 950px;
+  z-index: 2;
 }
 .sec2__ice1 {
   position: absolute;
