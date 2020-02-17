@@ -62,8 +62,7 @@ let thumb = document.body.querySelector('.sec3__thumb');
 let sliderClientRect = slider.getBoundingClientRect();
 const maxLeft = slider.offsetWidth - thumb.offsetWidth;
 const minLeft = sliderClientRect.left + thumb.offsetWidth/2;
-console.log(maxLeft);
-console.log(minLeft);
+
 let mouseDown = false;
 function moveThumbAt(x){
   let left = x - minLeft;

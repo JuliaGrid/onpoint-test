@@ -1,7 +1,7 @@
 .sec3 {
   z-index: 3;
   position: relative;
-  height: 2000px;
+  height: 1300px;
   transform-style: preserve-3d;
 }
 .sec3__back {

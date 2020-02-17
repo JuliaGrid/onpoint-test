@@ -347,6 +347,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  margin-left: -10px;
   background-image: url('../img/sec2Back.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -395,7 +396,7 @@
 .sec3 {
   z-index: 3;
   position: relative;
-  height: 2000px;
+  height: 1300px;
   transform-style: preserve-3d;
 }
 .sec3__back {
