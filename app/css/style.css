@@ -314,6 +314,7 @@
   width: 1006px;
   left: 50%;
   margin-left: -503px;
+  display: none;
 }
 .sec1__go p {
   font-size: 30px;
